@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musyawarah - Bubble Chat</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #6a5acd, #00bfff);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a5acd;
+            margin-bottom: 20px;
+        }
+
+        .chat {
+            display: flex;
+            margin: 10px 0;
+        }
+
+        .chat.left {
+            justify-content: flex-start;
+        }
+
+        .chat.right {
+            justify-content: flex-end;
+        }
+
+        .bubble {
+            max-width: 65%;
+            padding: 12px 15px;
+            border-radius: 20px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.5;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .left .bubble {
+            background: #e0e7ff;
+            color: #333;
+            border-bottom-left-radius: 5px;
+        }
+
+        .right .bubble {
+            background: #8a2be2;
+            color: white;
+            border-bottom-right-radius: 5px;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .final {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background: linear-gradient(135deg, #8a2be2, #00bfff);
+            color: white;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Musyawarah Study Tour</h1>
+
+    <div class="chat left">
+        <div class="bubble">
+            <div class="name">Rani</div>
+            Teman-teman, kita akan bermusyawarah menentukan tujuan study tour.
+        </div>
+    </div>
+
+    <div class="chat right">
+        <div class="bubble">
+            <div class="name">Budi</div>
+            Saya mengusulkan ke kebun binatang karena kita bisa belajar tentang hewan.
+        </div>
+    </div>
+
+    <div class="chat left">
+        <div class="bubble">
+            <div class="name">Siti</div>
+            Saya mengusulkan ke museum agar kita bisa belajar sejarah.
+        </div>
+    </div>
+
+    <div class="chat right">
+        <div class="bubble">
+            <div class="name">Andi</div>
+            Taman wisata edukasi juga menarik karena bisa belajar sambil bermain.
+        </div>
+    </div>
+
+    <div class="chat left">
+        <div class="bubble">
+            <div class="name">Dewi</div>
+            Saya setuju museum karena lebih bermanfaat untuk pelajaran.
+        </div>
+    </div>
+
+    <div class="chat right">
+        <div class="bubble">
+            <div class="name">Budi</div>
+            Baik, saya juga setuju memilih museum.
+        </div>
+    </div>
+
+    <div class="chat left">
+        <div class="bubble">
+            <div class="name">Andi</div>
+            Saya juga setuju.
+        </div>
+    </div>
+
+    <div class="chat right">
+        <div class="bubble">
+            <div class="name">Semua</div>
+            Setuju!
+        </div>
+    </div>
+
+    <div class="final">
+        Mufakat tercapai: Study tour ke museum!
+    </div>
+
+</div>
+
+</body>
+</html>
+</body>
+</html>

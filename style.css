@@ -1,0 +1,245 @@
+/* CIRI-CIRI STYLING */
+.ciri-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.ciri-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+    padding: 35px 25px;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    animation: slideUp 0.8s ease forwards;
+    animation-delay: var(--delay);
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.ciri-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 30px 80px rgba(52, 152, 219, 0.3);
+    border-color: #3498db;
+}
+
+.ciri-icon {
+    font-size: 3.5em;
+    display: block;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
+}
+
+.ciri-number {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* WARNING BOX */
+.warning-box {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    padding: 40px 30px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 50px 0;
+    border-left: 8px solid #f39c12;
+    box-shadow: 0 20px 60px rgba(243, 156, 18, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.warning-icon {
+    font-size: 4em;
+    display: block;
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+/* LANGKAH STYLING */
+.langkah-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+}
+
+.langkah-header h2 {
+    color: white !important;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.progress-container {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    padding: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #ecf0f1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: inset 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.progress-fill {
+    width: 14%;
+    height: 100%;
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+    border-radius: 20px;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 20px rgba(39, 174, 96, 0.5);
+}
+
+.langkah-container {
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.langkah-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 0.8s ease forwards;
+}
+
+.langkah-step:nth-child(even) {
+    flex-direction: row-reverse;
+    animation: slideInRight 0.8s ease forwards;
+    transform: translateX(50px);
+}
+
+.langkah-step.active .step-circle {
+    background: linear-gradient(45deg, #27ae60, #2ecc71) !important;
+}
+
+.step-circle {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin: 0 30px;
+    box-shadow: 0 15px 40px rgba(52, 152, 219, 0.4);
+    position: relative;
+    z-index: 2;
+}
+
+.step-content {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    flex: 1;
+    position: relative;
+    border-left: 5px solid #3498db;
+}
+
+.step-content h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* TIPS BOX */
+.tips-box {
+    background: linear-gradient(135deg, #d5f4e6 0%, #a8e6cf 100%);
+    padding: 40px;
+    border-radius: 25px;
+    margin: 60px 0;
+    border-left: 8px solid #27ae60;
+    box-shadow: 0 20px 60px rgba(39, 174, 96, 0.2);
+    text-align: center;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tip-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.tip-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(39, 174, 96, 0.3);
+}
+
+.tip-item span {
+    font-size: 2.5em;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.tip-item div strong {
+    display: block;
+    color: #27ae60;
+    font-size: 1.2em;
+}
+
+/* ANIMATIONS */
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
